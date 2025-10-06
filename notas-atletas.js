@@ -19,10 +19,10 @@ let atletas = [
 
    atletas.forEach(function(atleta){
 
-        notasOrdenadas = atleta.notas.sort((a,b) => a-b);
-        notasComputadas = notasOrdenadas.slice(1, 4);
-        notasSomadas = notasComputadas.reduce((total, nota) => total+nota, 0);
-        media = notasSomadas/notasComputadas.length;
+        let notasOrdenadas = atleta.notas.sort((a,b) => a-b);
+        let notasComputadas = notasOrdenadas.slice(1, 4);
+        let notasSomadas = notasComputadas.reduce((total, nota) => total+nota, 0);
+        let media = notasSomadas/notasComputadas.length;
 
         console.log("\n");
         console.log(atleta.nome);
